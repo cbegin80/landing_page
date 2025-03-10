@@ -10,11 +10,13 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 1440px;
+    height: 1912px;
     background-color: white;
 }
 
 .container > * {
     padding: 0 200px;
+    flex: 1;
 }
 
 ul {
@@ -25,6 +27,13 @@ ul {
 .header, .hero {
     background-color: #1f2937;
     color: #f9faf8;
+}
+
+.header{
+    flex: 0;
+}
+
+.header, .hero, .random_info, .inspiration, .c2a {
     display:flex;
     align-items: center;
     justify-content: center;
@@ -57,6 +66,25 @@ ul {
     color: #e5e7eb;
 }
 
+.hero_left, .hero-right {
+    width: 45%;
+    margin: 20px;
+}
+
+.hero_right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    background-color: gray;
+}
+
+.image.placeholder{
+    flex: 1;
+    text-align: center;
+}
+
 .hero_headline {
     font-size: 48px;
     color: #F9FAF8;
@@ -68,10 +96,39 @@ ul {
     color: #E5E7EB;
 }
 
+.button {
+    background-color: #3882f6;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    margin: 8px 8px 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a{
+  text-decoration: none;
+  color: #F9FAF8;
+  font-weight: 900;
+}
+
 div {
     border: red dashed 1px;
 }
 
 div div {
     border: green dashed 1px;
+}
+
+div div div {
+    border: blue dashed 1px;
+}
+
+div div div div {
+    border: purple dashed 1px;
+}
+
+div div div div div {
+    border: aqua dashed 1px;
 }
