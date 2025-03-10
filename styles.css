@@ -19,7 +19,7 @@ body {
 
 ul {
     margin: 0;
-    padding-right: 12px;
+    padding: 0;
 }
 
 .header, .hero {
@@ -32,24 +32,40 @@ ul {
 }
 
 .logo {
+    flex: 1;
     font-size: 24px;
+    font-weight: 900;
     margin-right: auto;
+}
+
+.nav-links {
+    flex: 3;
+    display:flex;
+    padding: 0px;
+    justify-content: space-between;
 }
 
 .header-links {
     display: flex;
     list-style: none;
     gap: 12px;
-    margin-left: auto;
-}
-
-.header-links li {
-    flex: 1;
+    margin-left: auto
 }
 
 .header-links a {
     text-decoration: none;
     color: #e5e7eb;
+}
+
+.hero_headline {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero_text{
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 div {
