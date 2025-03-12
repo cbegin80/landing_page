@@ -119,11 +119,15 @@ ul {
     flex: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .random_image {
+    flex: 1 1 1;
     min-width: 160px;
     min-height: 160px;
+    max-width: 320px;
+    max-height: 320px;
     gap: 20px;
     border: #3882F6 solid 3px;
     border-radius: 8px
@@ -156,7 +160,7 @@ ul {
     display: flex;
     background-color: #3882F6;
     border-radius: 8px;
-    padding: 40px 20px;
+    padding: 40px;
     color: #F9FAF8;
 }
 
@@ -173,9 +177,9 @@ ul {
 }
 
 .c2a_right{
-    flex: 1;
+    flex: 0;
     display:flex;
-    align-items: center;
+    align-items: flex;
     justify-content: center;
 }
 
