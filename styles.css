@@ -24,12 +24,12 @@ ul {
     padding: 0;
 }
 
-.header, .hero {
+.header, .hero, .footer {
     background-color: #1f2937;
     color: #f9faf8;
 }
 
-.header{
+.header, .footer{
     flex: 0;
 }
 
@@ -133,6 +133,52 @@ ul {
     text-align: center;
 }
 
+.inspiration {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.attribution {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.c2a_container {
+    flex: 1;
+    display: flex;
+    background-color: #3882F6;
+    border-radius: 8px;
+    padding: 40px 20px;
+    color: #F9FAF8;
+}
+
+.c2a_left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.c2a_header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.c2a_right{
+    flex: 1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .button {
     background-color: #3882f6;
@@ -145,28 +191,17 @@ ul {
     justify-content: center;
 }
 
+.border_white {
+    border: 2px solid #F9FAF8;
+}
+
 .button a{
   text-decoration: none;
   color: #F9FAF8;
   font-weight: 900;
 }
 
-div {
-    border: red dashed 1px;
-}
-
-div div {
-    border: green dashed 1px;
-}
-
-div div div {
-    border: blue dashed 1px;
-}
-
-div div div div {
-    border: purple dashed 1px;
-}
-
-div div div div div {
-    border: aqua dashed 1px;
+.footer {
+    padding: 40px;
+    text-align: center;
 }
